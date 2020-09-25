@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    display: flex;
+    position: relative;
+}
+.wrapper .header{
+    width: 100%,
+    height auto;
+    position: relative;
+    margin-top: auto;
+}
+
+.header .hamburger{
+    grid-column-start: 2;
+}
+
+.image{
+    width: 350px;
+    height:350px;
+    margin-left: 20px;
+}
