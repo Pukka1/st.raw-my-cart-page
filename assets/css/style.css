@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .wrapper{
@@ -11,11 +12,22 @@ body{
     width: 100%,
     height auto;
     position: relative;
-    margin-top: auto;
+}
+.menu.desktop{
+ display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
-.header .hamburger{
-    grid-column-start: 2;
+.header .mm-menu-toggle{
+height: 20px;
+width: 30px;
+   position: absolute;
+   right:3%;
+   top:35px;
+   display:inline-block;
+   vertical-align: middle;
+   z-index:20;
 }
 
 .image{
