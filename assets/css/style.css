@@ -15,9 +15,9 @@ body {
 
 .st-raw-logo {
   position: fixed;
-  width: 150px;
+  width: 100px;
   margin-top: 30px;
-  margin-left: -15px;
+  margin-left: -10px;
 }
 
 .header-wrapper {
@@ -35,45 +35,45 @@ body {
 }
 
 .header-name {
-  font-size: 40px;
+  font-size: 25px;
   font-weight: bold;
-  font-family: 'Catamaran', sans-serif;
   color: #2e2525;
   text-align: center;
+  padding-top: 30px;
 }
 
 .header-second {
-  grid-column: 2/2;;
+  grid-column: 2/2;
 }
 
 /*added design to ul because its the only one. doesnt affect other elements*/
 ul {
   display: flex;
   flex-direction: column;
-  text-align:left;
-  padding-top: 20px;
+  text-align: left;
+  padding-top: 15px;
 }
 
-.quick-links-header{
+.quick-links-header {
   font-weight: bold;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
-.header-second a{
+.header-second a {
   position: relative;
   display: inline;
   cursor: pointer;
   transition: color 0.4s ease;
 }
 
-.header-second a:hover{
-   color: #271919;
+.header-second a:hover {
+  color: #271919;
 }
 
-.header-second a:hover:after{
+.header-second a:hover:after {
   width: 100%;
 }
-.header-second a:after{
+.header-second a:after {
   content: '';
   position: absolute;
   z-index: 1;
@@ -83,9 +83,6 @@ ul {
   height: 2px;
   background: #201c1c;
   transition: width 0.2s step-end;
-}
-.product-section {
-  margin-left: 115px;
 }
 
 .product-image {
@@ -159,12 +156,12 @@ a:active {
 }
 .outer-menu .hamburger {
   position: absolute;
-  top: 0;
+  margin-top: 0;
   right: 0;
   z-index: 1;
   width: 70px;
-  height: 60px;
-  margin-right: 10px;
+  height: 40px;
+  margin-right: 0;
   background: rgba(204, 190, 45, 0.75);
   border-radius: 0 0.12em 0.12em 0;
   cursor: pointer;
@@ -310,7 +307,7 @@ li {
 }
 
 table {
-  width: 70%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
@@ -324,16 +321,16 @@ table {
 
 th {
   text-align: left;
-  padding: 5px;
+  padding: 8px;
   color: #aaaaaa;
   font-weight: normal;
-  border-bottom: 1px solid#aaaaaa;
+  border-bottom: 0.5px solid#aaaaaa;
   padding-bottom: 30px;
 }
 
 td {
-  padding: 20px 5px;
-  border-bottom: 1px solid #aaaaaa;
+  padding: 20px 8px;
+  border-bottom: 0.5px solid #aaaaaa;
 }
 
 td input {
@@ -352,7 +349,8 @@ td a {
 td img {
   width: 100px;
   height: 100px;
-  margin-right: 10px;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 .total-price {
@@ -372,4 +370,29 @@ th:last-child {
   text-align: right;
 }
 
-/*--media query for less than 600 screensize*/
+.checkout-button {
+  background-color: #242524;
+  border: none;
+  color: #fff;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  place-self:center;
+}
+
+.button1 {
+  background-color:rgb(15, 15, 13);
+  color: fff;
+
+}
+
+.button1:hover {
+  background-color:rgb(204, 190, 45);
+  color: white;
+}

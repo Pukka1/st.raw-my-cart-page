@@ -84,9 +84,6 @@ ul {
   background: #201c1c;
   transition: width 0.2s step-end;
 }
-.product-section {
-  margin-left: 115px;
-}
 
 .product-image {
   width: 100px;
@@ -159,12 +156,12 @@ a:active {
 }
 .outer-menu .hamburger {
   position: absolute;
-  top: 0;
+  margin-top: 0;
   right: 0;
   z-index: 1;
   width: 70px;
-  height: 60px;
-  margin-right: 10px;
+  height: 40px;
+  margin-right: 0;
   background: rgba(204, 190, 45, 0.75);
   border-radius: 0 0.12em 0.12em 0;
   cursor: pointer;
@@ -327,13 +324,13 @@ th {
   padding: 5px;
   color: #aaaaaa;
   font-weight: normal;
-  border-bottom: 1px solid#aaaaaa;
+  border-bottom: 0.5px solid#aaaaaa;
   padding-bottom: 30px;
 }
 
 td {
   padding: 20px 5px;
-  border-bottom: 1px solid #aaaaaa;
+  border-bottom: 0.5px solid #aaaaaa;
 }
 
 td input {
@@ -372,4 +369,30 @@ th:last-child {
   text-align: right;
 }
 
-/*--media query for less than 600 screensize*/
+/
+.checkout-button {
+  background-color: #242524;
+  border: none;
+  color: #fff;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  place-self:center;
+}
+
+.button1 {
+  background-color:rgb(15, 15, 13);
+  color: fff;
+
+}
+
+.button1:hover {
+  background-color:rgb(204, 190, 45);
+  color: white;
+}
