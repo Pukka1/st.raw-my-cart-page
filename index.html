@@ -4,25 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> St.raw/my-cart</title>
-    <link rel ="shortcut icon" type="image/svg" href= "assets/img/Logo web dev black-04.svg">
+    <link rel="shortcut icon" type="image/svg" href="assets/img/Logo web dev black-04.svg">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-<header class="wrapper">
-<div class= "header">
-    <a href= "home.html"> <img src ="assets/img/Logo web dev black-04.svg" alt="st.raw logo" style="width:200px">
-    </a>
-    <nav class="desktop">
-    <a href=""><img src="assets/img/hamburger icon copy.svg" alt="" class="mm-menu-toggle" style="width:20px"></a>
-    </nav>
+    <header>
+        <a href="home.html"><img src="assets/img/Logo web dev 10-01-20 9.17 pm-05.svg" alt="st.raw-logo" class="st-raw-logo"> </a>
+        <nav>
+            <div class="outer-menu">
+                <input class="checkbox-toggle" type="checkbox" />
+                <div class="hamburger">
+                    <div></div>
+                </div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <ul>
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">shop</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">my cart</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
-
-    <section>
-        <img src="assets/img/glass straws.jpg" alt="multicolored glass straws" class="image">
-
+    <!--cart-items-details in a table--->
+    <section class="product-section-all-content">
+        <div class="header-wrapper">
+       <h2 class="header-name">Shopping Cart</h2>
+       <div class="header-second">
+        <ul>
+            <li class="quick-links-header">Quick Links</li>
+           <li> <a href="#">shipping & returns</a></li>
+           <li> <a href="#">need assistance?</a></li>
+           <li> <a href="#">subscriptions</a></li>
+        </ul>
 </div>
+        </div>
+       <div class="product-section small-container cart-page">
+            <table>
+                <tr class="table-header">
+                    <th>product</th>
+                    <th>quantity</th>
+                    <th>subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="assets/img/glass straws.jpg" alt="selected straws">
+                            <div>
+                                <article> glass straw
+                                </article>
+                                <small>Price:$5.00</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <input type="number" min="1" value="1" name="amount" id="amount" class="amount">
+                    </td>
+                    <td><input type="number" step="0.01" min="0" value="0" readonly name="total" id="total" class="total"> </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="assets/img/glass straws.jpg" alt="selected straws">
+                            <div>
+                                <article> glass straw
+                                </article>
+                                <small>Price:$5.00</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <input type="number" min="1" value="1" name="amount" id="amount1" class="amount">
+                    </td>
+                    <td><input type="number" step="0.01" min="0" value="0" readonly name="total" id="total1" class="total"> </td>
+                </tr>
 
+            </table>
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>subtotal</td>
+                        <td>
+                        <td><input type="number" step="0.01" min="0" value="0" readonly name="total" id="total2" class="total2"> </td>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </section>
 </body>
 </html>
