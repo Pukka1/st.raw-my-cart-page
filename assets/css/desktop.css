@@ -1,38 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200&family=Oxygen:wght@300&display=swap');
 
+html{
+   scroll-behavior: smooth;
+
+}
 * {
   box-sizing: border-box;
   font-family: 'Catamaran', sans-serif;
-  font-weight: 300;
 }
 
 body {
   display: grid;
+  grid-template-rows: 150px 1fr 1fr;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
+
+.logo-nav-wrapper {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index:3;
+  background: fff;
+}
+
+.logo-nav-wrapper.header-shrink {
+  padding: 10px 0;
+}
+
+
 .st-raw-logo {
   position: fixed;
-  width: 150px;
+  width: 120px;
   margin-top: 30px;
-  margin-left: -15px;
+  margin-left: 15px;
 }
 
 .header-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 110px;
   background: #f2ede4;
   height: 200px;
   width: 100%;
 }
 
-.product-section-all-content {
-  display: grid;
-  grid-template-rows: 350px 1fr;
-}
 
 .header-name {
   font-size: 40px;
@@ -43,37 +56,37 @@ body {
 }
 
 .header-second {
-  grid-column: 2/2;;
+  grid-column: 2/2;
 }
 
 /*added design to ul because its the only one. doesnt affect other elements*/
 ul {
   display: flex;
   flex-direction: column;
-  text-align:left;
+  text-align: left;
   padding-top: 20px;
 }
 
-.quick-links-header{
+.quick-links-header {
   font-weight: bold;
   padding-bottom: 10px;
 }
 
-.header-second a{
+.header-second a {
   position: relative;
   display: inline;
   cursor: pointer;
   transition: color 0.4s ease;
 }
 
-.header-second a:hover{
-   color: #271919;
+.header-second a:hover {
+  color: #271919;
 }
 
-.header-second a:hover:after{
+.header-second a:hover:after {
   width: 100%;
 }
-.header-second a:after{
+.header-second a:after {
   content: '';
   position: absolute;
   z-index: 1;
@@ -85,10 +98,7 @@ ul {
   transition: width 0.2s step-end;
 }
 
-.product-image {
-  width: 100px;
-  margin-top: 20px;
-}
+
 
 /*navigation-style*/
 .flex-center {
@@ -110,8 +120,8 @@ a:active {
 
 .outer-menu {
   position: fixed;
-  top: 30px;
-  right: 0;
+  margin-top: 30px;
+  right: 15px;
   z-index: 1;
 }
 .outer-menu .checkbox-toggle {
@@ -159,8 +169,8 @@ a:active {
   margin-top: 0;
   right: 0;
   z-index: 1;
-  width: 70px;
-  height: 40px;
+  width: 90px;
+  height: 50px;
   margin-right: 0;
   background: rgba(204, 190, 45, 0.75);
   border-radius: 0 0.12em 0.12em 0;
@@ -301,6 +311,12 @@ li {
 }
 /*navigation-style-end*/
 
+/*all-content-display*/
+product-section-all-content {
+display: grid;
+grid-template-rows: 350px 1fr;
+}
+
 /*cart-items-details*/
 .cart-page {
   margin: 80px, auto;
@@ -310,7 +326,7 @@ table {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 30px;
   border-collapse: collapse;
 }
 
@@ -329,8 +345,17 @@ th {
 }
 
 td {
-  padding: 20px 5px;
-  border-bottom: 0.5px solid #aaaaaa;
+  padding: 15px 5px;
+}
+
+.main-table{
+ border-bottom: 0.5px solid #aaaaaa;
+
+}
+
+.product-image {
+  width: 100px;
+  margin-top: 20px;
 }
 
 td input {
@@ -341,7 +366,13 @@ td input {
 .table-data-final {
   border-bottom: 0;
 }
-td a {
+td .remove-button {
+  color: #141212;
+  font-size: 12px;
+  transition-duration: 0.4s;
+}
+
+td .remove-button:hover {
   color: #a11e12;
   font-size: 12px;
 }
@@ -349,7 +380,11 @@ td a {
 td img {
   width: 100px;
   height: 100px;
-  margin-right: 10px;
+  margin-right: 5px;
+}
+
+.td-description {
+  padding: 10px;
 }
 
 .total-price {
@@ -369,7 +404,6 @@ th:last-child {
   text-align: right;
 }
 
-/
 .checkout-button {
   background-color: #242524;
   border: none;
@@ -383,16 +417,15 @@ th:last-child {
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
-  place-self:center;
+  place-self: center;
 }
 
 .button1 {
-  background-color:rgb(15, 15, 13);
+  background-color: rgb(15, 15, 13);
   color: fff;
-
 }
 
 .button1:hover {
-  background-color:rgb(204, 190, 45);
+  background-color: rgb(204, 190, 45);
   color: white;
 }

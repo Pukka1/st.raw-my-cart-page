@@ -9,7 +9,8 @@
     <link rel="stylesheet" media="screen and (min-width: 992px)" href="./assets/css/desktop.css">
 </head>
 <body>
-    <header>
+
+    <header class="logo-nav-wrapper header-shrink" >
         <a href="home.html"><img src="assets/img/Logo web dev 10-01-20 9.17 pm-05.svg" alt="st.raw-logo" class="st-raw-logo"> </a>
         <nav>
             <div class="outer-menu">
@@ -32,21 +33,22 @@
             </div>
         </nav>
     </header>
+
     <!--cart-items-details in a table--->
-    <section class="product-section-all-content">
+   <section class="product-section-all-content">
         <div class="header-wrapper">
-       <h2 class="header-name">Shopping Cart</h2>
-       <div class="header-second">
-        <ul>
-            <li class="quick-links-header">Quick Links</li>
-           <li> <a href="#">shipping & returns</a></li>
-           <li> <a href="#">need assistance?</a></li>
-           <li> <a href="#">subscriptions</a></li>
-        </ul>
-</div>
+            <h2 class="header-name">Shopping Cart</h2>
+            <div class="header-second">
+                <ul>
+                    <li class="quick-links-header">Quick Links</li>
+                    <li> <a href="#">shipping & returns</a></li>
+                    <li> <a href="#">need assistance?</a></li>
+                    <li> <a href="#">subscriptions</a></li>
+                </ul>
+            </div>
         </div>
-       <div class="small-container cart-page">
-            <table>
+        <div class="small-container cart-page">
+            <table class= "main-table">
                 <tr class="table-header">
                     <th>product</th>
                     <th>quantity</th>
@@ -56,12 +58,12 @@
                     <td>
                         <div class="cart-info">
                             <img src="assets/img/glass straws.jpg" alt="selected straws">
-                            <div>
+                            <div class="td-description">
                                 <article> glass straw
                                 </article>
                                 <small>Price:$5.00</small>
                                 <br>
-                                <a href="">Remove</a>
+                                <a href="" class="remove-button">Remove</a>
                             </div>
                         </div>
                     </td>
@@ -74,12 +76,12 @@
                     <td>
                         <div class="cart-info">
                             <img src="assets/img/glass straws.jpg" alt="selected straws">
-                            <div>
+                            <div class="td-description">
                                 <article> glass straw
                                 </article>
                                 <small>Price:$5.00</small>
                                 <br>
-                                <a href="">Remove</a>
+                                <a href="" class="remove-button">Remove</a>
                             </div>
                         </div>
                     </td>
@@ -92,8 +94,8 @@
             </table>
             <div class="total-price">
                 <table>
-                    <tr>
-                        <td>subtotal</td>
+                    <tr class=>
+                        <td>Total</td>
                         <td>
                         <td><input type="number" step="0.01" min="0" value="0" readonly name="total" id="total2" class="total2"> </td>
                         </td>
@@ -103,5 +105,60 @@
         </div>
         <button class="checkout-button button1">check out</button>
     </section>
+    <footer class="footer-distributed">
+
+        <div class="testing-square"> </div>
+        <div class="footer-left">
+
+            <h3>st.raw</h3>
+
+            <p class="footer-links">
+                <a href="#">home</a>
+                ·
+                <a href="#">about</a>
+                ·
+                <a href="#">contact-us</a>
+                ·
+                <a href="#">faq</a>
+            </p>
+
+            <p class="footer-company-name">st.raw&copy; 2020</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>3241 bamboo street</span> Chicago, Illinois</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>(540) 555 6327</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">contact@straw.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About st.raw</span>
+                At st.raw we strive to make sustainability accessible to all.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
