@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> St.raw/my-cart</title>
     <link rel="shortcut icon" type="image/svg" href="assets/img/Logo web dev black-04.svg">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" media="screen and (min-width: 992px)" href="./assets/css/desktop.css">
+    <link rel="stylesheet" href="cart-assets/css/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="cart-assets/css/desktop.css">
+    <link rel="stylesheet" href="cart-assets/css/nav.css">
 </head>
 <body>
 
     <header class="logo-nav-wrapper header-shrink" >
-        <a href="home.html"><img src="assets/img/Logo web dev 10-01-20 9.17 pm-05.svg" alt="st.raw-logo" class="st-raw-logo"> </a>
+        <a href="home.html"><img src="cart-assets/img/st.raw-header-logo.svg" alt="st.raw-logo" class="st-raw-logo"> </a>
         <nav>
             <div class="outer-menu">
                 <input class="checkbox-toggle" type="checkbox" />
@@ -57,11 +58,11 @@
                 <tr>
                     <td>
                         <div class="cart-info">
-                            <img src="assets/img/glass straws.jpg" alt="selected straws">
+                            <img src="cart-assets/img/metal-product-shot.jpg" alt="metal product shot selected">
                             <div class="td-description">
-                                <article> glass straw
-                                </article>
-                                <small>Price:$5.00</small>
+                                <h2> metal
+                                </h2>
+                                <small>Price:$5.00( 3 straws & pouch bundle)</small>
                                 <br>
                                 <a href="" class="remove-button">Remove</a>
                             </div>
@@ -72,25 +73,6 @@
                     </td>
                     <td><input type="number" step="0.01" min="0" value="0" readonly name="total" id="total" class="total"> </td>
                 </tr>
-                <tr>
-                    <td>
-                        <div class="cart-info">
-                            <img src="assets/img/glass straws.jpg" alt="selected straws">
-                            <div class="td-description">
-                                <article> glass straw
-                                </article>
-                                <small>Price:$5.00</small>
-                                <br>
-                                <a href="" class="remove-button">Remove</a>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <input type="number" min="1" value="1" name="amount" id="amount1" class="amount">
-                    </td>
-                    <td><input type="number" step="0.01" min="0" value="0" readonly name="total" id="total1" class="total"> </td>
-                </tr>
-
             </table>
             <div class="total-price">
                 <table>
@@ -98,67 +80,17 @@
                         <td>Total</td>
                         <td>
                         <td><input type="number" step="0.01" min="0" value="0" readonly name="total" id="total2" class="total2"> </td>
-                        </td>
+                       </td>
                     </tr>
                 </table>
             </div>
         </div>
         <button class="checkout-button button1">check out</button>
     </section>
-    <footer class="footer-distributed">
-
-        <div class="testing-square"> </div>
-        <div class="footer-left">
-
-            <h3>st.raw</h3>
-
-            <p class="footer-links">
-                <a href="#">home</a>
-                ·
-                <a href="#">about</a>
-                ·
-                <a href="#">contact-us</a>
-                ·
-                <a href="#">faq</a>
-            </p>
-
-            <p class="footer-company-name">st.raw&copy; 2020</p>
-        </div>
-
-        <div class="footer-center">
-
-            <div>
-                <i class="fa fa-map-marker"></i>
-                <p><span>3241 bamboo street</span> Chicago, Illinois</p>
-            </div>
-
-            <div>
-                <i class="fa fa-phone"></i>
-                <p>(540) 555 6327</p>
-            </div>
-
-            <div>
-                <i class="fa fa-envelope"></i>
-                <p><a href="mailto:support@company.com">contact@straw.com</a></p>
-            </div>
-
-        </div>
-
-        <div class="footer-right">
-
-            <p class="footer-company-about">
-                <span>About st.raw</span>
-                At st.raw we strive to make sustainability accessible to all.
-            </p>
-
-            <div class="footer-icons">
-
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-github"></i></a>
-            </div>
-        </div>
-    </footer>
+      <section class="spacing">
+      </section>
 </body>
+<footer class="footer-padding">
+    <img src="cart-assets/img/st.raw-footer-logo.svg" alt="footer st.raw logo diagram">
+</footer>
 </html>
